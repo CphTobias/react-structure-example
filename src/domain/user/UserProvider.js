@@ -1,6 +1,11 @@
 import * as React from "react"
-import { UserContext } from "./UserContext"
 import { initialState, userReducer } from "./userReducer"
+
+const UserContext = React.createContext({
+  user: initialState,
+  dispatch: () => {},
+})
+export const useUser = () => React.useContext(UserContext)
 
 function UserProvider({ children }) {
   const [state, dispatch] = React.useReducer(userReducer, initialState)

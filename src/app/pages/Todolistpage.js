@@ -4,10 +4,10 @@ import {
   initialState,
 } from "../../domain/todolist/todolistReducer"
 import { addTodo, removeTodo } from "../../domain/todolist/todolistActions"
-import { useUser } from "../../domain/user/UserContext"
 import { logoutUser } from "../../domain/user/userActions"
 import { useHistory } from "react-router-dom"
 import { isValidUser } from "../../domain/user/userUtils"
+import { useUser } from "../../domain/user/UserProvider"
 
 function Todolistpage() {
   const history = useHistory()

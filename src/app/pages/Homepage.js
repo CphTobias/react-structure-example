@@ -1,6 +1,6 @@
 import * as React from "react"
 import { useHistory } from "react-router-dom"
-import { useUser } from "../../domain/user/UserContext"
+import { useUser } from "../../domain/user/UserProvider"
 
 function Homepage() {
   const { user } = useUser()
