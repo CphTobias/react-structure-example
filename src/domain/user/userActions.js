@@ -23,8 +23,8 @@ const logoutUser = () => ({
 
 const userActions = {
   loginUserStart,
-  loginUserError,
   loginUserSuccess,
+  loginUserError,
   logoutUser,
 }
 
