@@ -21,11 +21,19 @@ const logoutUser = () => ({
   type: LOGOUT_USER,
 })
 
+const userActions = {
+  loginUserStart,
+  loginUserError,
+  loginUserSuccess,
+  logoutUser,
+}
+
 export {
   LOGIN_USER_ERROR,
   LOGIN_USER_START,
   LOGIN_USER_SUCCESS,
   LOGOUT_USER,
+  userActions,
   loginUserError,
   loginUserStart,
   loginUserSuccess,

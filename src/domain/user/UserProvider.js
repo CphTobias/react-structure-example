@@ -1,9 +1,10 @@
 import * as React from "react"
+import { userActions } from "./userActions"
 import { initialState, userReducer } from "./userReducer"
 
 const UserContext = React.createContext({
   user: initialState,
-  dispatch: () => {},
+  dispatch: (action = { userActions }) => {},
 })
 export const useUser = () => React.useContext(UserContext)
 
